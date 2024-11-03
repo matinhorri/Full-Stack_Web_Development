@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Add to the List</title>
+  </head>
+  <script>
+  </script>
+  <script async defer src="resources/js/.js"></script>
+  <script async defer src="resources/js/contactMe.js"></script>
+  <link rel="stylesheet" href="resources/css/todo.css">
+
+    <div id="boxone"><a href="myContacts.html"> Contacts</a></div>  
+    <div id="boxone"><a href="myWidgets.html"> Widgets</a></div>    
+    <div id="boxone"><a href="myAboutMe.html"> About me</a></div>
+    <div id="boxone"><a href="contactMe.html"> Contact me</a></div>
+    <div id="boxone"><a href="login.html"> Login</a></div>    
+    <div id="boxone"><a href="add.html"> Add</a></div>  
+</head>
+<body id="addPage">
+  <div id ="wholeBox">
+    <h2><br><br>Contact Me<br></h2>
+    <p> Required fields are makrked with <span id="redstar">*</span><br></p>
+    <form action="https://www-users.cselabs.umn.edu/~joh13266/contactMe.php" method="POST">
+        <div>
+            <label for="postTitle">Title: <span id="redstar">*</span><br></label>
+            <input type="text" id="postTitle" name="postTitle" required>
+        </div>
+        <div>
+            <label for="email">Email(if you want to link it your calender): </span><br></label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="date">Date: <span id="redstar">*</span><br></label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+            <legend >Priority of the Task: <span id="redstar">*</span></legend>
+            <input onclick="checkButton()" type="radio" id="high" name="priority" value="high" required> 
+            <label for="high">high</label><br>
+            <input onclick="checkButton()" type="radio" id="normal" name="priority" value="normal" required>
+            <label for="normal">normal</label><br>
+            <input onclick="checkButton()" type="radio" id="low" name="priority" value="low" required>
+            <label for="low">low</label><br>
+        </div>
+        <div>
+            <br>
+            <label for="description">Description: <br></label>
+            <textarea type="text" id="description" name="description"></textarea>
+        </div>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+</body>
+</html>

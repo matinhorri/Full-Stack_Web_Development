@@ -1,0 +1,30 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Todo List
+  link(rel='stylesheet' href='resources/css/todo.css')
+  script(defer='' src='resources/js/todo.js')
+header
+  h1 Not Done Tasks
+#mainBody
+  #leftSide
+    ul#exampleList
+       include navigation.pug
+  #content
+    table#tablecontainer
+      thread
+        tr#odd
+            th title 
+            th date 
+            th priority
+            th#output Description
+            th Status 
+        tbody 
+          each checkin in tasks
+            tr
+                td= checkin.title 
+                td= checkin.date
+                td= checkin.priority  
+                td= checkin.message
+                td= checkin.status
+footer Matin Horri &copy; 2022

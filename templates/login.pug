@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title login!
+link(rel="stylesheet", href="resources/css/myStyle.css")
+body
+header#pageheader
+   include navigation.pug
+div
+h1 Log in?
+#login
+
+  form(action="/login" method="post")
+    div 
+      label(for="username")
+         | User name:
+      input(type="text",name="username" placeholder="username")
+    div
+      label(for="password")
+         | Password:
+      input(type="passwprd", name= "password" placeholder="Password")
+    div
+    div
+        input(type="submit", value="Submit")

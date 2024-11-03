@@ -1,0 +1,50 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Todo List
+  link(rel='stylesheet' href='resources/css/todo.css')
+  script(defer='' src='resources/js/todo.js')
+header
+  h1 Todo List
+#mainBody
+  #leftSide
+    ul#exampleList
+       include navigation.pug
+  #content
+    div
+      p#whitish  Filter Completed and not completed Tasks: 
+       #boxtwo 
+        a(href="/done") Completed 
+       #boxthree 
+        a(href="/notdone") Not Completed 
+       #boxthree 
+        a(href="/todo") Both 
+    table#tablecontainer
+      thread
+        tr#odd
+        th title 
+        th date 
+        th priority
+        th#output Description
+        th Status
+      tbody 
+        each checkin in tasks
+          tr
+          td= checkin.title 
+          td= checkin.date
+          td= checkin.priority  
+          td= checkin.message
+          td= checkin.status
+    div  
+      #boxtwo 
+        a(href="/add") Add New Task 
+    div  
+      #boxthree 
+        a(href="/delete") Delete task
+    div
+      #boxtwo 
+        a(href="/changedone") Change the status of the task to Completed
+    div  
+      #boxthree 
+        a(href="/changeundone") Change the status of the task to not copleted
+footer Matin Horri &copy; 2022

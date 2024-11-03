@@ -1,0 +1,58 @@
+doctype html
+head
+  // <link rel="stylesheet" href="passwordWidget.css">
+  script(async='' defer='' src='resources/js/passwordWidget.js')
+  link(rel='stylesheet' href='resources/css/myStyle.css')
+  script(async='' defer='' src='resources/js/timeWidget.js')
+  script(async='' defer='' src='resources/js/weatherWidget.js')
+  script(async='' defer='' src='resources/js/clickWidget.js')
+  meta(charset='UTF-8')
+  title Hoemwork one about me
+header#pageheader
+ include navigation.pug
+#testi
+  h3 My Widgets
+#widgetcontainer
+  #widgetmemberone
+    iframe(width='560' height='315' src='https://www.youtube.com/embed/qz0aGYrrlhU' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+  #widgetmembertwo
+    blockquote.twitter-tweet
+      p(lang='en' dir='ltr')
+        | Professor Zhi-Li Zhang, working with 
+        a(href='https://twitter.com/UtahSoC?ref_src=twsrc%5Etfw') @UtahSoC
+        | , earned the 
+        a(href='https://twitter.com/NSF?ref_src=twsrc%5Etfw') @NSF
+        |  Convergence Accelerator Track G award for their work on &quot;Securely Operate through 5G Networks with Informed Control&quot; (SONIC).
+        a(href='https://twitter.com/hashtag/UMNproud?src=hash&ref_src=twsrc%5Etfw') #UMNproud
+        a(href='https://twitter.com/UMNCSE?ref_src=twsrc%5Etfw') @UMNCSE
+        a(href='https://t.co/kocy1LoNi5') https://t.co/kocy1LoNi5
+      | &mdash; UMNComputerScience (@UMNComputerSci) 
+      a(href='https://twitter.com/UMNComputerSci/status/1567593538254258183?ref_src=twsrc%5Etfw') September 7, 2022
+    script(async='' src='https://platform.twitter.com/widgets.js' charset='utf-8')
+  #timeleftwidget
+    #header
+      h2 Time Until end of the semester
+      hr
+
+      span#demo
+  #weatherContainer
+    #weatherHeader
+      h2 weather
+      hr
+    #weatherContent
+      p#weatherStatus
+      div
+        span Coordinates:
+        input#latitude-input(type='text' placeholder='Latitude')
+        input#longitude-input(type='text' placeholder='Longitude')
+      div
+        button#find-me(type='button') Auto-Find me!
+        button#get-weather-btn(type='button') Find The Weather!
+      #weatherOutput
+        p#temp-display
+        p#cloud-cover-display
+        p#sunrise-display
+        p#sunset-display
+      // Interesting fact. We're legally required to put this here.
+      a(href='https://open-meteo.com/') Weather data by Open-Meteo.com
+      a(href='https://sunrise-sunset.org/') Sunrise and sunset data by sunrise-sunset.org

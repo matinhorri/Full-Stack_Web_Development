@@ -1,0 +1,62 @@
+doctype html 
+html 
+meta(charset="UTF-8")
+title Matin's Contact me Page
+script.
+  
+  function myTask() {
+          let newLi = document.createElement("li");
+          newLi.innerText="In order to best address your concern, please make sure to list the specific way in which I have wronged you.";
+          document.getElementById("output").appendChild(newLi);
+    }
+  
+script(async, defer, src="resources/js/myContacts.js")
+script(async, defer, src="resources/js/contactMe.js")
+link(rel="stylesheet", href="resources/css/todo.css")
+link(rel="stylesheet", href="resources/css/myStyle.css")
+body
+  #wholeBox
+    h2
+      br
+      br
+      | New Task
+      br
+      p
+      | Required fields are makrked with 
+      span#redstar *
+      br
+      form(action="/add", method="POST")
+        div
+          label(for="postTitle")
+            | Title: 
+            span#redstar *
+            br
+          input#postTitle(type="text", name="title", required)
+        div
+          label(for="date")
+            | Date: 
+            br
+          input#username(type="date", name="date")
+        #solutionBox
+         fieldset#smallerBox
+            legend
+              | Priority:
+              br 
+              input#question(onclick="checkButton()", type="radio", name="priority", value="high")
+              label(for="high") High
+              br
+              input#comment(onclick="checkButton()", type="radio", name="priority", value="normal")
+              label(for="normal") Normal
+              br
+              input#concern(onclick="checkButton()", type="radio", name="priority", value="low")
+              label(for="low") Low
+              br
+              fieldset#testiBox
+              //- span#output
+              div
+              br
+              label(for="message")
+                | Description: 
+                br
+                textarea#message(type="text", name="message")
+                input(type="submit", value="Add")

@@ -1,0 +1,98 @@
+doctype html 
+html 
+meta(charset="UTF-8")
+title Hoemwork one contact information
+script(async, defer, src="resources/js/myContacts.js")
+link(rel="stylesheet", href="resources/css/myStyle.css")
+header#pageheader
+  include navigation.pug
+h2
+  br
+  br
+  | My Primary Contacts
+#flexcontainer
+  div
+    table#tablecontainer
+      tbody
+        tr#odd
+          th
+            p(onclick="sortTable(0)") Name
+          th
+            p(onclick="sortTable(1)") Location
+          th
+            p(onclick="sortTable(2)") Contact Information
+          th
+            p(onclick="sortTable(3)") email
+          th
+            p(onclick="sortTable(4)") website
+        tr#even.imagelocone(onmouseover="funImg.call(this)", onmouseout="outImg.call(this)")
+          td Daniel Kluver
+          td
+            | 389 sheperd Labs
+            br
+            | 100 Union St SE
+            br
+            | Minneapolis, MN 55455 
+            img(src="resources/images/Shepherd.jpg", alt="Shepherd\'s Picture")
+          td Course Instructor CSCI 4131 Fall 2022
+          td
+            a(href="mailto:Kluve018@umn.edu") Kluve018@umn.edu
+          td
+            a(href="https://cse.umn.edu/cs/daniel-kluver") CSE Staff Page
+        tr#odd.imageloctwo(onmouseover="onImg.call(this)", onmouseout="outImg.call(this)")
+          td Mats Heimdahl
+          td
+            | 4-192 Keller Hall
+            br
+            | 200 Union Street Se
+            br
+            | Minneapolis, MN 55455
+            img(src="resources/images/keller.jpg", alt="keller\'s picture")
+          td CSE Department Head
+          td
+            a(href="mailto:heimdahl@umn.edu") heimdahl@umn.edu
+          td
+            a(href="https://cse.umn.edu/cs/mats-heimdahl") CSE Staff Page
+        tr#even.imagelocthree(onmouseover="onImg.call(this)", onmouseout="outImg.call(this)")
+          td Joseph A.Konstan
+          td
+            | 4-192 Keller Hall
+            br
+            | 200 Union St SE
+            br
+            | Minneapolis, MN 55455 
+            img(src="resources/images/keller.jpg", alt="Keller\'s Picture")
+          td Course Instructor CSCI 5115 Fall 2022
+          td
+            a(href="mailto:Konstan@umn.edu") Konstan@umn.edu
+          td
+            a(href="https://konstan.umn.edu") Dedicated Web Page
+        tr#odd.imagelocfour(onmouseover="onImg.call(this)", onmouseout="outImg.call(this)")
+          td Jon Weissman
+          td
+            | 4-225 Keller Hall
+            br
+            | 200 Union St SE
+            br
+            | Minneapolis, MN 55455 
+            img(src="resources/images/keller.jpg", alt="keller\'s picture")
+          td Course Instructor CSCI 4061 Fall 2022
+          td
+            a(href="mailto:weiss039@umn.edu") weiss039@umn.edu
+          td
+            a(href="https://cse.umn.edu/cs/jon-weissman") CSE Staff Page
+        tr#even.imagelocfive(onmouseover="onImg.call(this)", onmouseout="outImg.call(this)")
+          td Andrew Exley
+          td
+            | 6-255 Keller Hall
+            br
+            | 200 Union St SE
+            br
+            | Minneapolis, MN 55455 
+            img(src="resources/images/keller.jpg", alt="keller\'s picture")
+          td Course Instructor CSCI 4511W Fall 2022
+          td
+            a(href="mailto:exle0002@umn.edu") exle0002@umn.edu
+          td
+            a(href="https://cse.umn.edu/cs/andrew-exley") CSE Staff Page
+img#imagetwo(src="resources/images/malibu.png", alt="Malibu\'s Picture")

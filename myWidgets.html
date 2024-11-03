@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--<link rel="stylesheet" href="passwordWidget.css">-->
+    <script async defer src="resources/js/passwordWidget.js"></script>
+    <link rel="stylesheet" href="resources/css/myStyle.css">
+    <script async defer src="resources/js/timeWidget.js"></script>
+    <script async defer src="resources/js/weatherWidget.js"></script>
+    <meta charset="UTF-8">
+    <title>Hoemwork one about me</title>
+  </head>
+   
+<body id="contactPage">
+  <header id="pageheader"> 
+    <div id="boxone"><a href="myContacts.html"> Contacts</a></div>  
+    <div id="boxone"><a href="myWidgets.html"> Widgets</a></div>    
+    <div id="boxone"><a href="myAboutMe.html"> About me</a></div>
+    <div id="boxone"><a href="contactMe.html"> Contact me</a></div>
+    <div id="boxone"><a href="login.html"> Login</a></div>     
+  </header>
+    <div id="testi">
+      <h3>My Widgets</h3>
+    </div>
+  <div id="widgetcontainer">
+        <div id="widgetmemberone">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="widgetmembertwo">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Professor Zhi-Li Zhang, working with <a href="https://twitter.com/UtahSoC?ref_src=twsrc%5Etfw">@UtahSoC</a>, earned the <a href="https://twitter.com/NSF?ref_src=twsrc%5Etfw">@NSF</a> Convergence Accelerator Track G award for their work on &quot;Securely Operate through 5G Networks with Informed Control&quot; (SONIC).<a href="https://twitter.com/hashtag/UMNproud?src=hash&amp;ref_src=twsrc%5Etfw">#UMNproud</a> <a href="https://twitter.com/UMNCSE?ref_src=twsrc%5Etfw">@UMNCSE</a> <a href="https://t.co/kocy1LoNi5">https://t.co/kocy1LoNi5</a></p>&mdash; UMNComputerScience (@UMNComputerSci) <a href="https://twitter.com/UMNComputerSci/status/1567593538254258183?ref_src=twsrc%5Etfw">September 7, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    <div id="passwordContainer">
+      <div id="header">
+        <h2>Password Strength Checking with JS</h2>
+        <hr>
+        </div>
+      <div id="content">
+          <form id="register" name="register">
+            <label for="password">Password :</label>                 
+            <input name = "password"
+                 id   = "password"
+                 type = "password"
+                  placeholder ="Type Your Password here">
+
+            &nbsp;&nbsp; 
+
+          <span id="pwdresult"></span>
+            </form>
+        </div>
+     </div>
+     <div id="timeleftwidget">
+          <div id="header">
+              <h2>Time Until end of the semester</h2>
+              <hr>
+             </div>
+        <div id="content">
+            <span id="demo"></span>
+              </div>
+        </div>
+        <div id="weatherContainer">
+          <div id="weatherHeader">
+              <h2>weather</h2>
+              <hr>
+          </div>
+          <div id="weatherContent">
+              <p id="weatherStatus"></p>
+              <div>
+                  <span>Coordinates:</span>
+                  <input id="latitude-input" type="text" placeholder="Latitude">
+                  <input id="longitude-input" type="text" placeholder="Longitude">
+              </div>
+              <div>
+                  <button id="find-me" type="button">Auto-Find me!</button>
+                  <button id="get-weather-btn" type="button">Find The Weather!</button>
+              </div>
+              </form>
+  
+              <div id="weatherOutput">
+                  <p id="temp-display"></p>
+                  <p id="cloud-cover-display"></p>
+                  <p id="sunrise-display"></p>
+                  <p id="sunset-display"></p>
+              </div>
+              <!-- Interesting fact. We're legally required to put this here. -->
+              <a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a>
+              <a href="https://sunrise-sunset.org/">Sunrise and sunset data by sunrise-sunset.org</a>
+          </div>
+      </div> 
+      <div id="timeleftwidget">
+        <div id="header">
+            <h2>Time Until end of the semester</h2>
+            <hr>
+           </div>
+      <div id="content">
+          <span id="demo"></span>
+            </div>
+      </div>
+   </div>
+</body>
+</html>

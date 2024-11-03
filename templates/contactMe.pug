@@ -1,0 +1,77 @@
+doctype html 
+html 
+meta(charset="UTF-8")
+title Matin's Contact me Page
+script.
+  
+  function myTask() {
+          let newLi = document.createElement("li");
+          newLi.innerText="In order to best address your concern, please make sure to list the specific way in which I have wronged you.";
+          document.getElementById("output").appendChild(newLi);
+    }
+  
+script(async, defer, src="resources/js/myContacts.js")
+script(async, defer, src="resources/js/contactMe.js")
+link(rel="stylesheet", href="resources/css/myStyle.css")
+header#pageheader
+  include navigation.pug
+body
+#wholeBox
+  h2
+    br
+    br
+    | Contact Me
+    br
+  p
+    | Required fields are makrked with 
+    span#redstar *
+    br
+  form(action="/contactMe", method="POST")
+    div
+      label(for="postTitle")
+        | Title: 
+        span#redstar *
+        br
+      input#postTitle(type="text", name="title", required)
+    div
+      label(for="email")
+        | Email: 
+        span#redstar *
+        br
+      input#email(type="email", name="email", required)
+    div
+      label(for="username")
+        | Username: 
+        span#redstar *
+        br
+      input#username(type="text", name="username", required)
+    div
+      label(for="link")
+        | Link:
+        br
+      input#link(type="url", name="link")
+    #solutionBox
+    //  <p> Category of message: <span id="redstar">*</span><br></p> 
+    fieldset#smallerBox
+      legend
+        | Category of message: 
+        span#redstar *
+      input#question(onclick="checkButton()", type="radio", name="category", value="question", required)
+      label(for="question") Question
+      br
+      input#comment(onclick="checkButton()", type="radio", name="category", value="comment", required)
+      label(for="Comment") Comment
+      br
+      input#concern(onclick="checkButton()", type="radio", name="category", value="concern", required)
+      label(for="Concern") Concern
+      br
+    fieldset#testiBox
+    span#output
+    div
+      br
+      label(for="message")
+        | Message: 
+        span#redstar *
+        br
+      textarea#message(type="text", name="message", required)
+    input(type="submit", value="Submit")

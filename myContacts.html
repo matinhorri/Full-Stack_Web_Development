@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hoemwork one contact information</title>
+  </head>
+  <script async defer src="resources/js/myContacts.js"></script>
+  <link rel="stylesheet" href="resources/css/myStyle.css">  
+<body id="contactPage">
+  <header id="pageheader"> 
+    <div id="boxone"><a href="myContacts.html"> Contacts</a></div>  
+    <div id="boxone"><a href="myWidgets.html"> Widgets</a></div>    
+    <div id="boxone"><a href="myAboutMe.html"> About me</a></div>
+    <div id="boxone"><a href="contactMe.html"> Contact me</a></div>
+    <div id="boxone"><a href="login.html"> Login</a></div>     
+  </header>
+    <h2><br><br>My Primary Contacts</h2>
+    <div id="flexcontainer">
+  <div >
+    <table id="tablecontainer">
+        <tr id="odd">
+          <th><p onclick="sortTable(0)">Name</p></th>
+          <th><p onclick="sortTable(1)">Location</p></th>
+          <th><p onclick="sortTable(2)">Contact Information</p></th>
+          <th><p onclick="sortTable(3)">email</p></th>
+          <th><p onclick="sortTable(4)">website</p></th>
+        </tr>
+        <tr id="even" class="imagelocone" onmouseover="funImg.call(this)" onmouseout="outImg.call(this)">
+          <td>Daniel Kluver</td>
+          <td >389 sheperd Labs <br>100 Union St SE <br> Minneapolis, MN 55455  <img src="resources/images/Shepherd.jpg" alt="Shepherd's Picture" ></td>
+          <td>Course Instructor CSCI 4131 Fall 2022 </td>
+          <td><a href="mailto:Kluve018@umn.edu">Kluve018@umn.edu</a></td>
+          <td><a href="https://cse.umn.edu/cs/daniel-kluver">CSE Staff Page</a></td>
+        </tr>
+        <tr id="odd" class="imageloctwo" onmouseover="onImg.call(this)" onmouseout="outImg.call(this)">
+          <td>Mats Heimdahl</td>
+          <td >4-192 Keller Hall <br>200 Union Street Se <br>Minneapolis, MN 55455<img src="resources/images/keller.jpg" alt="keller's picture" ></td>
+          <td>CSE Department Head</td>
+          <td><a href="mailto:heimdahl@umn.edu">heimdahl@umn.edu</a></td>
+          <td><a href="https://cse.umn.edu/cs/mats-heimdahl">CSE Staff Page</a></td>
+        </tr>
+        <tr id="even" class="imagelocthree" onmouseover="onImg.call(this)" onmouseout="outImg.call(this)">
+            <td>Joseph A.Konstan</td>
+            <td >4-192 Keller Hall<br>200 Union St SE<br>Minneapolis, MN 55455  <img src="resources/images/keller.jpg" alt="Keller's Picture"  ></td>
+            <td>Course Instructor CSCI 5115 Fall 2022</td>
+            <td><a href="mailto:Konstan@umn.edu">Konstan@umn.edu</a></td>
+            <td><a href="https://konstan.umn.edu">Dedicated Web Page</a></td>
+        </tr>
+        <tr id="odd" class="imagelocfour" onmouseover="onImg.call(this)" onmouseout="outImg.call(this)">
+            <td>Jon Weissman</td>
+            <td >4-225 Keller Hall<br>200 Union St SE<br>Minneapolis, MN 55455  <img src="resources/images/keller.jpg" alt="keller's picture" > </td>
+            <td>Course Instructor CSCI 4061 Fall 2022</td>
+            <td><a href="mailto:weiss039@umn.edu">weiss039@umn.edu</a></td>
+            <td><a href="https://cse.umn.edu/cs/jon-weissman">CSE Staff Page</a></td>
+        </tr>
+        <tr id="even" class="imagelocfive" onmouseover="onImg.call(this)" onmouseout="outImg.call(this)">
+            <td>Andrew Exley</td>
+            <td >6-255 Keller Hall<br>200 Union St SE<br>Minneapolis, MN 55455  <img src="resources/images/keller.jpg" alt="keller's picture" ></td>
+            <td>Course Instructor CSCI 4511W Fall 2022</td>
+            <td><a href="mailto:exle0002@umn.edu">exle0002@umn.edu</a></td>
+            <td><a href="https://cse.umn.edu/cs/andrew-exley">CSE Staff Page</a></td>
+        </tr>
+            </div>
+        </table>
+        </div>
+          <img id="imagetwo" src="resources/images/malibu.png" alt="Malibu's Picture" >
+    </body>
+    </html>
